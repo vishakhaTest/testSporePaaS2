@@ -1,0 +1,11 @@
+stack_name: testsporepaas2-qa
+environment: test
+paas_environment: test
+
+layers:
+  - dns:
+      - name: 'testsporepaas2.test.paas.vodalabs.com.au'
+    instances:
+      ami_name: <%=ami_name%>
+      env:
+        LOG_FILENAME: testsporepaas2-qa
